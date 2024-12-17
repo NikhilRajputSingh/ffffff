@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking Font-Awesome icones -->
+    <script src="https://kit.fontawesome.com/3806dfb3e0.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>H</span>arsh <span>R</span>aj <span>S</span>ingh</h1>
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#My-Work">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Cross-icone -->
+            <i class="fa-solid fa-circle-xmark " onclick="closemenu()"></i>
+          </ul>
+          <!-- Menu-icone -->
+          <i class="fa-solid fa-bars " onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi,My name is <span>Harsh</span><br />
+            and I am a passionate <br />
+            <span id="element"></span>
+          </h1>
+        </div>
+        <!-- My-Resume -->
+        <a href="resume (2).pdf" class="btn btn2 mybtn" download>Dowload Resume</a>
+      </div>
+    </div>
+
+    <!-- About-Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="My profile copy~4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a B.Tech student specializing in Electrical Engineering at Ramgarh Engineering College. I am passionate about leveraging my knowledge and skills to solve real-world problems. I am proficient in various software tools and programming languages relevant to the field, including C++, JavaScript, and frontend web development. Additionally, I am eager to learn new technologies and continuously expand my skill set. I am a highly motivated and results-oriented individual with excellent communication and teamwork skills.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>Tailwind-CSS</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>React.Js</span></li>
+                <li><span>C++</span><br></li>
+              </ul>
+            </div>
+            <div class="tab-contents " id="education">
+                <ul>
+                    <li><span>2020-2024</span><br>B.TECH from Ramgarh Engineering College, Ramgarh <br> CGPA: 7.73</li>
+                    <li><span>2017-2019</span><br>Senior Secondary-XII from Dr Shyma Parsad Mukherjee Inter College, Sindri <br>Percentage: 70% </li>
+                    <li><span>2016-2017</span><br>Senior Secondary-X from Lions Public School,Sindei<br> CGPA: 9.2</li>
+                    
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ....................Services.............................. -->
+     <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+         <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Designer</h2>
+          <p class="P">My designs are simple and original, crafted to draw in more customers and enrich my portfolio. I focus on creating impactful visuals that highlight your brand's uniqueness and appeal.</p>
+          <a href="#">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UXDesigner</h2>
+          <p class="P">As a UI/UX designer, I create intuitive and visually appealing interfaces that enhance user experience. My focus is on blending functionality with design to make your digital products stand out.</p>
+          <a href="#">Learn more</a>
+        </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Designer</h2>
+            <p class="P">Don't just own your business - own your app too. Let me design user-friendly, impactful apps that showcase your brand and enhance your portfolio.</p>
+            <a href="#">Learn more</a>
+           </div>
+         </div>
+        </div>
+      </div>
+
+      <!-- ..................My-Work.................................. -->
+     <div id="My-Work">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Bubble Image.jpg" alt="">
+            <div class="layer">
+              <h3>Bubble hit game</h3>
+              <p class="P">This is a simple JavaScript-based bubble hit
+                game with a timer that continuously decreases.
+                When the timer reaches zero, the game ends,
+                and the user's total score is displayed.
+                 The goal of the game is to click on the bubbles
+                with the correct number that appears on the
+                'Hit' button above to earn points before time
+                runs out.</p>
+              <a href="https://harshrajrajput.github.io/Bubble-Hit-Game/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Myntra 3.png" alt="">
+            <div class="layer">
+              <h3>Myntra_Clone</h3>
+              <p class="P">Developed a responsive clone of Myntra.com, an online fashion and lifestyle platform, using HTML and CSS. Focused on replicating the design and user interface without backend integration.</p>
+              <a href=" https://nikhilrajputsingh.github.io/Myntra_Clone/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="BMI Image.jpg" alt="">
+            <div class="layer">
+              <h3>BMI-Calculator</h3>
+              <p class="P">"A simple and user-friendly BMI (Body Mass Index) calculator built using HTML, CSS, and JavaScript. This project helps users calculate their BMI by inputting their weight and height and provides a classification based on standard BMI categories."</p>
+              <a href="/https://harshrajrajput.github.io/BMI-Calculator" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+
+     </div>
+     <!-- ............Contact-Me......................... -->
+      <div id="contact">
+        <div class="container">
+        <div class="row">
+          <!-- Left-side-of-Contact-Me -->
+          <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p class="P"> <i class="fa-solid fa-paper-plane"></i>harshrajsingh242002@example.com</p>
+          <p class="P"><i class="fa-solid fa-phone"></i>6299264968</p>
+          <div class="socal-icones">
+            <a href="https://www.linkedin.com/in/harsh-raj-singh-249661198/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/HarshRajRajput"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+          </div>
+          <a href="" class="btn btn2">Dowload Resume</a>
+        </div>
+        <!-- Right-side-of-Contact-Me -->
+          <div class="contact-Right">
+            <form >
+              <input type="text" name="Name" placeholder="Enter Your Name" required>
+              <input type="text" name="email" placeholder="Enter Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Enter Your Message" ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @Harsh, Made with <i class="fa-solid fa-heart"></i> By Easy Tutorial</p>
+      </div>
+      </div>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var tablinks=document.getElementsByClassName('tab-links')
+      var tabcontents=document.getElementsByClassName('tab-contents')
+      function opentab(tabname) {
+        // for(tablink of tablinks){
+        //   tablink.classList.remove("active-link")
+        // }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        
+    
+      }
+     </script>
+    <!-- Linking  Typing JavaScript-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Web Developer</i>","Web Designer","Artist","Freelancer."],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
